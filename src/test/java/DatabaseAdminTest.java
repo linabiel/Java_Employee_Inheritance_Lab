@@ -25,7 +25,7 @@ public class DatabaseAdminTest {
 
     @Test
     public void canGetNiNumber() {
-        assertEquals(("GB123"));
+        assertEquals("GB123456Y", databaseAdmin.getNiNumber());
     }
 
     @Test
