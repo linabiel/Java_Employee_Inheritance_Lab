@@ -29,6 +29,12 @@ public class DeveloperTest {
     }
 
     @Test
+    public void canSetNiNumber() {
+        developer.setNiNumber("DF123456G");
+        assertEquals("DF123456G", developer.getNiNumber());
+    }
+
+    @Test
     public void canRaiseSalary() {
         developer.raiseSalary(5000);
         assertEquals(40000.00, developer.getSalary(), 0.0);
